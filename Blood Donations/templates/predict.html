@@ -1,0 +1,74 @@
+<html>
+
+<center>
+    <title>Blood Donation Prediction</title>
+
+    <style>
+        p {
+           color: 666363;
+           text-align: center;
+           }
+
+        form {
+            margin: 15px;
+            padding: 15px;
+            font-size: 20px;
+            border:
+        }
+
+        button {
+            background-color: #24a0ed;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            font-size: 16px;
+          }
+
+          .button:hover {
+             background-color: #3426f2;
+             color: white;
+          }
+
+          fieldset {
+            background-color: #eeeeee;
+            width: 700
+          }
+
+        legend {
+          background-color: gray;
+          color: white;
+          padding: 5px 10px;
+        }
+
+    input {
+      margin: 5px;
+      }
+    </style>
+
+
+    <h1>Predict Blood Donation</h1>
+    <img src="https://www.centurypa.com/images/blog/Blood%20donation.jpg" alt="blood donation" width="425" height="200">
+
+    <fieldset>
+      <legend>Result:</legend>
+      <p>Target Value: {{result}}</p>
+      <p>Prediction: {{statement}}</p>
+
+      <a href="/" class="button"><button type="button" name="button">Back</button></a>
+
+    </fieldset>
+
+
+    <br><br>
+    <h3 style="color:blue;">{{ prediction_text }}<h3>
+
+
+    <br><br>
+
+</center>
+</body>
+</html>

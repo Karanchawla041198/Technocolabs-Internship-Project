@@ -1,0 +1,70 @@
+<html>
+<body>
+<center>
+    <title>Blood Donation Prediction</title>
+
+    <style>
+        p {
+           color: 666363;
+           text-align: center;
+           }
+
+        form {
+            margin: 15px;
+            padding: 15px;
+            font-size: 20px;
+            border:
+        }
+
+        button {
+            background-color: #24a0ed;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            font-size: 16px;
+          }
+
+          .button:hover {
+             background-color: #3426f2;
+             color: white;
+          }
+
+          fieldset {
+            background-color: #eeeeee;
+            width: 700
+          }
+
+        legend {
+          background-color: gray;
+          color: white;
+          padding: 5px 10px;
+        }
+
+    input {
+      margin: 5px;
+      }
+    </style>
+
+
+    <h1>Predict Blood Donation</h1>
+    <img src="https://www.centurypa.com/images/blog/Blood%20donation.jpg" alt="blood donation" width="425" height="200">
+
+    <form action="/predict" method="POST">
+      <fieldset>
+        <legend>Enter Values:</legend>
+        <p>Recency: <input type="number" name="Regency (months)" placeholder="months since last donation" required="required"></p>
+        <p>Frequency: <input type="number" name="Frequency (times)" placeholder="total number of donation" required="required"></p>
+        <p>Monetary: <input type="number" name="Monetary (c.c. blood)" placeholder="total blood donated in c.c." required="required"></p>
+        <p>Time: <input type="number" name="Time (months)" placeholder="months since the first donation" required="required"></p>
+        <button class="button" type="submit" value="predict">Predict</button>
+      </fieldset>
+    </form>
+
+
+</center>
+</body>
+</html>

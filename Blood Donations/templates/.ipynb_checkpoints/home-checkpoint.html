@@ -1,0 +1,51 @@
+<html>
+<body bgcolor="red">
+<center>
+    <title>Predict Blood Donation</title>
+
+    <style>
+        p {
+           color: #FFFFFF;
+           text-align: center;
+           }
+
+        form {
+            margin: 15px;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #24a0ed;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            font-size: 16px;
+          }
+    
+          .button:hover {
+             background-color: #8B0000;	
+             color: white;
+          }
+    </style>
+          
+
+    <h1>Blood Donation</h1>
+
+    <form action="/predict" method="POST">
+        <p>Recency: <input type="number" name="Regency (months)" placeholder="months since last donation" required="required"></p>
+        <p>Frequency: <input type="number" name="Frequency (times)" placeholder="total number of donation" required="required"></p>
+        <p>Monetary: <input type="number" name="Monetary (c.c. blood)" placeholder="total blood donated in c.c." required="required"></p>
+        <p>Time: <input type="number" name="Time (months)" placeholder="months since the first donation" required="required"></p>
+
+        <button class="button" type="submit" value="predict">Predict</button>
+    </form>
+
+    <img src="https://www.brmsonline.com/wp-content/uploads/2018/02/Donate-Blood.jpg" alt="blood donation">
+</center>
+</body>
+</html>
